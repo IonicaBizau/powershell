@@ -24,6 +24,9 @@ PS = new shell('echo "node-powershell is awesome"');
 PS.on('output', function(data){
     console.log(data);
 });
+PS.on('error-output', function(data){
+    console.log(data);
+});
 PS.on('end', function(code) {
     //optional callback
     //Do Something
