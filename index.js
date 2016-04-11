@@ -42,7 +42,7 @@ function Shell (cmdlets, opt){
         _shell.emit('output', data);
     });
     _proc.stderr.on("data",function(data) {
-        _shell.emit('output', data);
+        _shell.emit('error-output', data);
     });
 
     _proc.on('close', function (code) {
