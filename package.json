@@ -1,38 +1,42 @@
 {
   "name": "powershell",
   "version": "1.1.0",
-  "description": "Lightweight module to run PowerShell straight from your Node app",
-  "main": "index.js",
+  "description": "Run PowerShell scripts and commands from Node.js.",
+  "main": "lib/index.js",
   "directories": {
     "example": "example"
   },
-  "dependencies": {
-    "colors": "^1.1.2"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IonicaBizauKitchen/node-powershell.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/powershell.git"
   },
   "keywords": [
-    "node-powershell",
-    "ps",
     "powershell",
-    "node-ps",
-    "microsoft",
-    "shell",
-    "cmd",
-    "command",
-    "command",
-    "Line"
+    "commands",
+    "scripts"
   ],
-  "author": "Ran Cohen <IonicaBizauKitchen@outlook.com>",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizauKitchen/node-powershell/issues"
+    "url": "https://github.com/IonicaBizau/powershell/issues"
   },
-  "homepage": "https://github.com/IonicaBizauKitchen/node-powershell#readme"
+  "homepage": "https://github.com/IonicaBizau/powershell#readme",
+  "blah": {
+    "description": [
+      {
+        "h2": "Why?"
+      },
+      {
+        "ul": [
+          "Actively maintained",
+          "Improved codebase.",
+          "Written in ES2015"
+        ]
+      }
+    ],
+    "thanks": "This module is heavily based on [`node-powershell`](https://github.com/rannn505/node-powershell) by [@rann505](https://github.com/rannn505/)."
+  }
 }
