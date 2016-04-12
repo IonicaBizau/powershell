@@ -38,5 +38,9 @@
       }
     ],
     "thanks": "This module is heavily based on [`node-powershell`](https://github.com/rannn505/node-powershell) by [@rann505](https://github.com/rannn505/)."
+  },
+  "dependencies": {
+    "is-undefined": "^1.0.0",
+    "spawno": "^1.0.0"
   }
 }

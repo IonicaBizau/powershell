@@ -25,28 +25,33 @@ const PowerShell = require("powershell");
 // Start the process
 let ps = new PowerShell("echo 'powershell is awesome'");
 
+// Handle process errors (e.g. powershell not found)
+ps.on("error", err => {
+    console.error(err);
+});
+
 // Stdout
-ps.on("output", function(data){
+ps.on("output", data => {
     console.log(data);
 });
 
 // Stderr
-ps.on("error-output", function(data){
+ps.on("error-output", data => {
     console.error(data);
 });
 
 // End
-ps.on("end", function(code) {
+ps.on("end", code => {
     // Do Something on end
 });
 ```
     
 ## :memo: Documentation
         
-### `PowerShell(cmdlets, opt, cb)`
+### `PowerShell(input, opt, cb)`
 
 #### Params
-- **String** `cmdlets`: The command or PowerShell script ro execute.
+- **String** `input`: The command or PowerShell script ro execute.
 - **Object** `opt`: An object containing the following fields:
  - `debug` (Boolean): Turn on/off the debug messages (default: `false`).
 - **Function** `cb`: The callback function (optional).
@@ -54,6 +59,9 @@ ps.on("end", function(code) {
         
 ## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
+
+## :cake: Thanks
+This module is heavily based on [`node-powershell`](https://github.com/rannn505/node-powershell) by [@rann505](https://github.com/rannn505/).
 
 ## :scroll: License
     
