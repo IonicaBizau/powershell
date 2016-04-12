@@ -1,71 +1,68 @@
-Node-PowerShell
-===
+# powershell [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/powershell.svg)](https://www.npmjs.com/package/powershell) [![Downloads](https://img.shields.io/npm/dt/powershell.svg)](https://www.npmjs.com/package/powershell) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
-<div>
-<p> <img height="50" width="50" src="https://raw.githubusercontent.com/rannn505/node-powershell/master/assets/node-powershell.png"> Lightweight module to run PowerShell straight from your Node app </p>
-</div>
+> Run PowerShell scripts and commands from Node.js.
 
-[![Version npm](https://img.shields.io/npm/v/node-powershell.svg?style=flat-square)](https://www.npmjs.com/package/node-powershell)[![NPM Downloads](https://img.shields.io/npm/dt/node-powershell.svg?style=flat-square)](https://www.npmjs.com/package/node-powershell)[![Dependencies](https://img.shields.io/david/rannn505/node-powershell.svg?style=flat-square)](https://david-dm.org/rannn505/node-powershell)
+## Why?
 
+ - Actively maintained
+ - Improved codebase.
+ - Written in ES2015
 
-## Installation
-
-```bash
-$ npm install node-powershell
+## :cloud: Installation
+    
+```sh
+$ npm i --save powershell
 ```
 
-## Quick start
+            
+## :clipboard: Example
 
-```javascript
-var shell = require('node-powershell');
-
-PS = new shell('echo "node-powershell is awesome"');
-
-PS.on('output', function(data){
-    console.log(data);
-});
-PS.on('error-output', function(data){
-    console.log(data);
-});
-PS.on('end', function(code) {
-    //optional callback
-    //Do Something
-});
-```
-
-## Examples
-
-####  Running a `.ps1` script:
+        
 
 ```js
-PS = new shell("Path/To/Your/Script.ps1");
+const PowerShell = require("powershell");
+
+// Start the process
+let ps = new PowerShell("echo 'powershell is awesome'");
+
+// Stdout
+ps.on("output", function(data){
+    console.log(data);
+});
+
+// Stderr
+ps.on("error-output", function(data){
+    console.error(data);
+});
+
+// End
+ps.on("end", function(code) {
+    // Do Something on end
+});
 ```
+    
+## :memo: Documentation
+        
+### `PowerShell(cmdlets, opt, cb)`
 
-####  Putting an input to yor script:
+#### Params
+- **String** `cmdlets`: The command or PowerShell script ro execute.
+- **Object** `opt`: An object containing the following fields:
+ - `debug` (Boolean): Turn on/off the debug messages (default: `false`).
+- **Function** `cb`: The callback function (optional).
 
-Just use `param ( )` instead of `Read-Host` in your script:
-```PowerShell
-param (
-    [Parameter(Mandatory = $true)]
-    [string]$st
-)
-echo $st
-```
+        
+## :yum: How to contribute
+Have an idea? Found a bug? See [how to contribute][contributing].
 
-and `'path "args"'` in your node app:
-```javascript
-PS = new shell('Path/To/Your/Script.ps1 "node-powershell Rocks"');
-```
+## :scroll: License
+    
+[MIT][license] © [Ionică Bizău][website]
+    
+[paypal-donations]: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVXDDLKKLQRJW
+[donate-now]: http://i.imgur.com/6cMbHOC.png
 
-#### Disabling Debug Messages:
-
-use `{debugMsg: false}` option: (Default is true)
-```javascript
-PS = new shell('echo "node-powershell is awesome"', {debugMsg: false});
-```
-
-
-## License
-
-  [MIT](LICENSE)
-
+[license]: http://showalicense.com/?fullname=Ionic%C4%83%20Biz%C4%83u%20%3Cbizauionica%40gmail.com%3E%20(http%3A%2F%2Fionicabizau.net)&year=2015#license-mit
+[website]: http://ionicabizau.net
+[contributing]: /CONTRIBUTING.md
+[docs]: /DOCUMENTATION.md
