@@ -1,6 +1,6 @@
 {
   "name": "powershell",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Run PowerShell scripts and commands from Node.js.",
   "main": "lib/index.js",
   "directories": {
@@ -42,5 +42,16 @@
   "dependencies": {
     "is-undefined": "^1.0.0",
     "spawno": "^1.0.0"
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
