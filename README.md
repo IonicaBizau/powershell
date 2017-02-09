@@ -59,6 +59,8 @@ ps.on("end", code => {
 - **String** `input`: The command or PowerShell script ro execute.
 - **Object** `opt`: An object containing the following fields:
  - `debug` (Boolean): Turn on/off the debug messages (default: `false`).
+ - `noprofile` (Boolean): Turn on/off noprofile parameter (default: `true`).
+ - `executionpolicy` (Enum): Run powershell with specified executionpolicy (default: System default). Valid enum values are `Restricted`, `AllSigned`, `RemoteSigned`, `Unrestricted`, `Bypass`, `Undefined`. [More info][ExecutionPolicies].
 - **Function** `cb`: The callback function (optional).
 
 
@@ -92,3 +94,5 @@ This module is heavily based on [`node-powershell`](https://github.com/rannn505/
 [website]: http://ionicabizau.net
 [contributing]: /CONTRIBUTING.md
 [docs]: /DOCUMENTATION.md
+
+[ExecutionPolicies]: https://msdn.microsoft.com/en-us/powershell/reference/5.0/microsoft.powershell.core/about/about_execution_policies
