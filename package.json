@@ -1,6 +1,6 @@
 {
   "name": "powershell",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "Run PowerShell scripts and commands from Node.js.",
   "main": "lib/index.js",
   "directories": {
@@ -18,7 +18,7 @@
     "commands",
     "scripts"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IonicaBizau/powershell/issues"
@@ -48,12 +48,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
