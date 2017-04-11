@@ -63,9 +63,6 @@ ps.on("end", code => {
  - `executionpolicy` (Enum): Run powershell with specified executionpolicy (default: System default). Valid enum values are `Restricted`, `AllSigned`, `RemoteSigned`, `Unrestricted`, `Bypass`, `Undefined`.
 - **Function** `cb`: The callback function (optional).
 
-#### Return
-- **Process** The PowerShell process.
-
 
 
 ## :yum: How to contribute
