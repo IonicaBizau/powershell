@@ -1,6 +1,6 @@
 {
   "name": "powershell",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Run PowerShell scripts and commands from Node.js.",
   "main": "lib/index.js",
   "directories": {
@@ -54,6 +54,9 @@
     "resources/",
     "menu/",
     "cli.js",
-    "index.js"
+    "index.js",
+    "bloggify.js",
+    "bloggify.json",
+    "bloggify/"
   ]
 }
