@@ -9,6 +9,7 @@
 
 ## Why?
 
+
  - Actively maintained
  - Improved codebase.
  - Written in ES2015
@@ -17,7 +18,11 @@
 ## :cloud: Installation
 
 ```sh
-$ npm i --save powershell
+# Using npm
+npm install --save powershell
+
+# Using yarn
+yarn add powershell
 ```
 
 
@@ -60,7 +65,9 @@ There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
+
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
 
 
 ## :memo: Documentation
