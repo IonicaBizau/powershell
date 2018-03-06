@@ -11,5 +11,6 @@ You can see below the API reference of this module.
  - `debug` (Boolean): Turn on/off the debug messages (default: `false`).
  - `noprofile` (Boolean): Turn on/off noprofile parameter (default: `true`).
  - `executionpolicy` (Enum): Run powershell with specified executionpolicy (default: System default). Valid enum values are `Restricted`, `AllSigned`, `RemoteSigned`, `Unrestricted`, `Bypass`, `Undefined`.
+ - `PSCore` (Boolean) : Turn on/off 'pwsh' the executable for PowerShell Core as opposed to Windowes PowerShell (default: 'false').
 - **Function** `cb`: The callback function (optional).
 
