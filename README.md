@@ -3,7 +3,9 @@
 
 # powershell
 
- [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/powershell.svg)](https://www.npmjs.com/package/powershell) [![Downloads](https://img.shields.io/npm/dt/powershell.svg)](https://www.npmjs.com/package/powershell)
+ [![Support me on Patreon][badge_patreon]][patreon] [![Buy me a book][badge_amazon]][amazon] [![PayPal][badge_paypal_donate]][paypal-donations] [![Ask me anything](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/powershell.svg)](https://www.npmjs.com/package/powershell) [![Downloads](https://img.shields.io/npm/dt/powershell.svg)](https://www.npmjs.com/package/powershell) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
+
+<a href="https://www.buymeacoffee.com/H96WwChMy" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
 > Run PowerShell scripts and commands from Node.js.
 
@@ -93,7 +95,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## :sparkling_heart: Support my projects
 
-I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously,
+I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
 this takes time. You can integrate and use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
 
 However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
@@ -114,6 +116,12 @@ Thanks! :heart:
 ## :cake: Thanks
 This module is heavily based on [`node-powershell`](https://github.com/rannn505/node-powershell) by [@rann505](https://github.com/rannn505/).
 
+## :dizzy: Where is this library used?
+If you are using this library in one of your projects, add it in this list. :sparkles:
+
+
+ - [`workflow-wm-windows`](https://github.com/havardh/workflow/tree/master/packages/workflow-wm-windows#readme) (by Håvard Wormdal Høiby)—Windows window manager adapter for workflow
+ - [`workflow-wm-windows-python`](https://github.com/havardh/workflow/tree/master/packages/workflow-wm-windows-python#readme) (by Håvard Wormdal Høiby)—Windows window manager adapter for workflow using python
 
 ## :scroll: License
 
